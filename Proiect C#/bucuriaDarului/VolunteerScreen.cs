@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace bucuriaDarului
 {
     public partial class VolunteerScreen : Form
     {
+        public static string SetValueForPhone = "";
         public VolunteerScreen()
         {
             InitializeComponent();
@@ -41,8 +43,9 @@ namespace bucuriaDarului
                             AddVolunterData.ShowDialog();
                             break;
                         }
-                    case 1: //Open AdminWindows
+                    case 1: //
                         {
+                            SetValueForPhone = NrTelefonSearch.Text;
                             PontajVoluntarExistentcs PontajVoluntarExistentcs = new PontajVoluntarExistentcs();
                             PontajVoluntarExistentcs.ShowDialog();
                             break;
@@ -81,23 +84,5 @@ namespace bucuriaDarului
                 return -99;
             }
         }
-<<<<<<< Updated upstream
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NrTelefonSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-=======
->>>>>>> Stashed changes
     }
 }

@@ -163,6 +163,7 @@ namespace bucuriaDarului
                         cmd.Parameters.Add("@Active", SqlDbType.Bit).Value = true;
                         int rowsAffected = cmd.ExecuteNonQuery();
                         cmd.Dispose();
+                        SingletonDB.CloseDatabaseConnection();
                     }
                 }
 
