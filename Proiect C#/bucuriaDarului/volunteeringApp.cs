@@ -42,7 +42,22 @@ namespace bucuriaDarului
                         }
                     case 0: //Open AdminWindows
                         {
-                            ClearCredentials();
+                            this.Hide();
+                            //MessageBox.Show("Login Succes");
+                            adminStartPage adminStartPage = new adminStartPage();
+                            adminStartPage.ShowDialog();
+                            break;
+                        }
+                    case 1: //Open reader
+                        {
+                            this.Hide();
+                            //MessageBox.Show("Login Succes");
+                            //VolunteerScreen VolunteerScreen = new VolunteerScreen();
+                           // VolunteerScreen.ShowDialog();
+                            break;
+                        }
+                    case 2: //Open vountar
+                        {
                             this.Hide();
                             //MessageBox.Show("Login Succes");
                             VolunteerScreen VolunteerScreen = new VolunteerScreen();

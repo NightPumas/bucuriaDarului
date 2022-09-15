@@ -36,23 +36,24 @@ namespace bucuriaDarului
                 {
                     case -1:
                         {
-                            MessageBox.Show("User not found");
+                            MessageBox.Show("User Ne-Existent");
+                            AddVolunterData AddVolunterData = new AddVolunterData();
+                            AddVolunterData.ShowDialog();
                             break;
                         }
                     case 1: //Open AdminWindows
                         {
                             MessageBox.Show("User Existent");
-                            AddVolunterData AddVolunterData = new AddVolunterData();
-                            AddVolunterData.ShowDialog();
+                            PontajVoluntarExistentcs PontajVoluntarExistentcs = new PontajVoluntarExistentcs();
+                            PontajVoluntarExistentcs.ShowDialog();
+                            break;
+                        }
+                    case -99: //Open AdminWindows
+                        {
+                            MessageBox.Show("Error Error Error");
                             break;
                         }
                 }
-
-
-
-
-
-
             }
 
 
@@ -66,10 +67,10 @@ namespace bucuriaDarului
                 Int32 result;
                 SqlConnection cnn = SingletonDB.GetDBConnection();
                 SingletonDB.OpenDatabaseConnection();
-                using (SqlCommand cmd = new("dbo.CheckNrTelefon", cnn))
+                using (SqlCommand cmd = new("dbo.CheckPhoneNumberExistance", cnn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@NrTelefon", SqlDbType.VarChar).Value = NrTelefonSearch.Text;
+                    cmd.Parameters.Add("@PhoneNumber", SqlDbType.VarChar).Value = NrTelefonSearch.Text;
                     result = Convert.ToInt32(cmd.ExecuteScalar());
                     cmd.Dispose();
                 }
