@@ -37,20 +37,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.entryDate = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.oraIntrare = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.oraIesire = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
-            this.nr_ore = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.checkboxActivitati = new System.Windows.Forms.CheckedListBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.nume = new System.Windows.Forms.TextBox();
             this.prenume = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
@@ -61,315 +50,208 @@
             this.telefontutore = new System.Windows.Forms.TextBox();
             this.prefesie = new System.Windows.Forms.TextBox();
             this.Hobby = new System.Windows.Forms.TextBox();
-            this.CarnetConducere = new System.Windows.Forms.CheckedListBox();
             this.SendToDatabaseBtn = new System.Windows.Forms.Button();
             this.detalii = new System.Windows.Forms.TextBox();
             this.nrdocument = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 28);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(84, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
+            this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nume";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 66);
+            this.label2.Location = new System.Drawing.Point(84, 186);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Prenume";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 103);
+            this.label3.Location = new System.Drawing.Point(84, 213);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.Size = new System.Drawing.Size(36, 15);
             this.label3.TabIndex = 2;
-            this.label3.Text = "email";
+            this.label3.Text = "Email";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 144);
+            this.label4.Location = new System.Drawing.Point(84, 244);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.Size = new System.Drawing.Size(100, 15);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Phone";
+            this.label4.Text = "Numar de telefon";
             // 
             // DataNasterii
             // 
-            this.DataNasterii.Location = new System.Drawing.Point(108, 184);
+            this.DataNasterii.Location = new System.Drawing.Point(202, 272);
+            this.DataNasterii.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DataNasterii.Name = "DataNasterii";
-            this.DataNasterii.Size = new System.Drawing.Size(250, 27);
+            this.DataNasterii.Size = new System.Drawing.Size(219, 23);
             this.DataNasterii.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 236);
+            this.label5.Location = new System.Drawing.Point(506, 155);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 20);
+            this.label5.Size = new System.Drawing.Size(75, 15);
             this.label5.TabIndex = 5;
-            this.label5.Text = "NumeTutore";
+            this.label5.Text = "Nume tutore";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 285);
+            this.label6.Location = new System.Drawing.Point(506, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 20);
+            this.label6.Size = new System.Drawing.Size(90, 15);
             this.label6.TabIndex = 6;
-            this.label6.Text = "PrenumeTutore";
+            this.label6.Text = "Prenume tutore";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(34, 323);
+            this.label7.Location = new System.Drawing.Point(505, 215);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 20);
+            this.label7.Size = new System.Drawing.Size(71, 15);
             this.label7.TabIndex = 7;
-            this.label7.Text = "email Tutore";
+            this.label7.Text = "Email tutore";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(34, 362);
+            this.label8.Location = new System.Drawing.Point(505, 251);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 20);
+            this.label8.Size = new System.Drawing.Size(135, 15);
             this.label8.TabIndex = 8;
-            this.label8.Text = "Tutore Phone";
-            // 
-            // entryDate
-            // 
-            this.entryDate.Location = new System.Drawing.Point(141, 405);
-            this.entryDate.Name = "entryDate";
-            this.entryDate.Size = new System.Drawing.Size(250, 27);
-            this.entryDate.TabIndex = 9;
-            this.entryDate.Value = new System.DateTime(2022, 9, 15, 17, 6, 35, 0);
+            this.label8.Text = "Numar de telefon tutore";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(5, 189);
+            this.label9.Location = new System.Drawing.Point(84, 278);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 20);
+            this.label9.Size = new System.Drawing.Size(71, 15);
             this.label9.TabIndex = 10;
             this.label9.Text = "DataNasterii";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 410);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 20);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "DataInregistrare";
-            // 
-            // oraIntrare
-            // 
-            this.oraIntrare.CustomFormat = "hh:mm:tt";
-            this.oraIntrare.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.oraIntrare.Location = new System.Drawing.Point(141, 460);
-            this.oraIntrare.Name = "oraIntrare";
-            this.oraIntrare.Size = new System.Drawing.Size(250, 27);
-            this.oraIntrare.TabIndex = 12;
-            this.oraIntrare.Value = new System.DateTime(2022, 9, 15, 0, 0, 0, 0);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(5, 501);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Ora Iesire";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(17, 460);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 20);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "Ora Intrare";
-            // 
-            // oraIesire
-            // 
-            this.oraIesire.CustomFormat = "hh:mm:tt";
-            this.oraIesire.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.oraIesire.Location = new System.Drawing.Point(141, 501);
-            this.oraIesire.Name = "oraIesire";
-            this.oraIesire.Size = new System.Drawing.Size(250, 27);
-            this.oraIesire.TabIndex = 15;
-            this.oraIesire.ValueChanged += new System.EventHandler(this.oraIesire_ValueChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 548);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 20);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "NrOre";
-            // 
-            // nr_ore
-            // 
-            this.nr_ore.Location = new System.Drawing.Point(92, 548);
-            this.nr_ore.Name = "nr_ore";
-            this.nr_ore.Size = new System.Drawing.Size(125, 27);
-            this.nr_ore.TabIndex = 17;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(409, 28);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 20);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Activitate";
-            // 
-            // checkboxActivitati
-            // 
-            this.checkboxActivitati.FormattingEnabled = true;
-            this.checkboxActivitati.Items.AddRange(new object[] {
-            "Bucatarie P",
-            "Pachete",
-            "Educatie ",
-            "Etichetat ",
-            "Pachete sate ",
-            "Pachete familii ",
-            "Transport ",
-            "Realizare pachete campanii ",
-            "Educatie lectii copii ",
-            "Educatie activitati nonformale"});
-            this.checkboxActivitati.Location = new System.Drawing.Point(549, 29);
-            this.checkboxActivitati.Name = "checkboxActivitati";
-            this.checkboxActivitati.Size = new System.Drawing.Size(207, 114);
-            this.checkboxActivitati.TabIndex = 19;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(454, 185);
+            this.label15.Location = new System.Drawing.Point(92, 353);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 20);
+            this.label15.Size = new System.Drawing.Size(49, 15);
             this.label15.TabIndex = 20;
             this.label15.Text = "Profesie";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(464, 229);
+            this.label16.Location = new System.Drawing.Point(95, 389);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 20);
+            this.label16.Size = new System.Drawing.Size(62, 15);
             this.label16.TabIndex = 21;
-            this.label16.Text = "Hobby";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(454, 274);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(125, 20);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "Carnet conducere";
+            this.label16.Text = "Hobby-uri";
             // 
             // nume
             // 
-            this.nume.Location = new System.Drawing.Point(134, 29);
+            this.nume.Location = new System.Drawing.Point(202, 154);
+            this.nume.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nume.Name = "nume";
-            this.nume.Size = new System.Drawing.Size(125, 27);
+            this.nume.Size = new System.Drawing.Size(110, 23);
             this.nume.TabIndex = 23;
             // 
             // prenume
             // 
-            this.prenume.Location = new System.Drawing.Point(134, 66);
+            this.prenume.Location = new System.Drawing.Point(202, 186);
+            this.prenume.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.prenume.Name = "prenume";
-            this.prenume.Size = new System.Drawing.Size(125, 27);
+            this.prenume.Size = new System.Drawing.Size(110, 23);
             this.prenume.TabIndex = 24;
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(134, 103);
+            this.email.Location = new System.Drawing.Point(202, 213);
+            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(125, 27);
+            this.email.Size = new System.Drawing.Size(110, 23);
             this.email.TabIndex = 25;
             // 
             // telefon
             // 
-            this.telefon.Location = new System.Drawing.Point(134, 144);
+            this.telefon.Location = new System.Drawing.Point(202, 244);
+            this.telefon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.telefon.Name = "telefon";
-            this.telefon.Size = new System.Drawing.Size(125, 27);
+            this.telefon.Size = new System.Drawing.Size(110, 23);
             this.telefon.TabIndex = 26;
             // 
             // NumeTutore
             // 
-            this.NumeTutore.Location = new System.Drawing.Point(178, 233);
+            this.NumeTutore.Location = new System.Drawing.Point(653, 147);
+            this.NumeTutore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NumeTutore.Name = "NumeTutore";
-            this.NumeTutore.Size = new System.Drawing.Size(125, 27);
+            this.NumeTutore.Size = new System.Drawing.Size(110, 23);
             this.NumeTutore.TabIndex = 27;
             // 
             // PrenumeTutore
             // 
-            this.PrenumeTutore.Location = new System.Drawing.Point(178, 285);
+            this.PrenumeTutore.Location = new System.Drawing.Point(653, 180);
+            this.PrenumeTutore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PrenumeTutore.Name = "PrenumeTutore";
-            this.PrenumeTutore.Size = new System.Drawing.Size(125, 27);
+            this.PrenumeTutore.Size = new System.Drawing.Size(110, 23);
             this.PrenumeTutore.TabIndex = 28;
             // 
             // emailtutore
             // 
-            this.emailtutore.Location = new System.Drawing.Point(178, 332);
+            this.emailtutore.Location = new System.Drawing.Point(653, 212);
+            this.emailtutore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailtutore.Name = "emailtutore";
-            this.emailtutore.Size = new System.Drawing.Size(125, 27);
+            this.emailtutore.Size = new System.Drawing.Size(110, 23);
             this.emailtutore.TabIndex = 29;
             // 
             // telefontutore
             // 
-            this.telefontutore.Location = new System.Drawing.Point(178, 365);
+            this.telefontutore.Location = new System.Drawing.Point(653, 243);
+            this.telefontutore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.telefontutore.Name = "telefontutore";
-            this.telefontutore.Size = new System.Drawing.Size(125, 27);
+            this.telefontutore.Size = new System.Drawing.Size(110, 23);
             this.telefontutore.TabIndex = 30;
             // 
             // prefesie
             // 
-            this.prefesie.Location = new System.Drawing.Point(579, 184);
+            this.prefesie.Location = new System.Drawing.Point(202, 352);
+            this.prefesie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.prefesie.Name = "prefesie";
-            this.prefesie.Size = new System.Drawing.Size(125, 27);
+            this.prefesie.Size = new System.Drawing.Size(110, 23);
             this.prefesie.TabIndex = 31;
             // 
             // Hobby
             // 
-            this.Hobby.Location = new System.Drawing.Point(579, 233);
+            this.Hobby.Location = new System.Drawing.Point(202, 389);
+            this.Hobby.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Hobby.Name = "Hobby";
-            this.Hobby.Size = new System.Drawing.Size(125, 27);
+            this.Hobby.Size = new System.Drawing.Size(110, 23);
             this.Hobby.TabIndex = 32;
-            // 
-            // CarnetConducere
-            // 
-            this.CarnetConducere.FormattingEnabled = true;
-            this.CarnetConducere.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"});
-            this.CarnetConducere.Location = new System.Drawing.Point(606, 278);
-            this.CarnetConducere.Name = "CarnetConducere";
-            this.CarnetConducere.Size = new System.Drawing.Size(150, 114);
-            this.CarnetConducere.TabIndex = 33;
             // 
             // SendToDatabaseBtn
             // 
-            this.SendToDatabaseBtn.Location = new System.Drawing.Point(613, 545);
+            this.SendToDatabaseBtn.Location = new System.Drawing.Point(452, 494);
+            this.SendToDatabaseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SendToDatabaseBtn.Name = "SendToDatabaseBtn";
-            this.SendToDatabaseBtn.Size = new System.Drawing.Size(94, 29);
+            this.SendToDatabaseBtn.Size = new System.Drawing.Size(82, 22);
             this.SendToDatabaseBtn.TabIndex = 34;
             this.SendToDatabaseBtn.Text = "Inregistrare";
             this.SendToDatabaseBtn.UseVisualStyleBackColor = true;
@@ -377,27 +259,65 @@
             // 
             // detalii
             // 
-            this.detalii.Location = new System.Drawing.Point(381, 329);
+            this.detalii.Location = new System.Drawing.Point(202, 431);
+            this.detalii.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.detalii.Name = "detalii";
-            this.detalii.Size = new System.Drawing.Size(125, 27);
+            this.detalii.Size = new System.Drawing.Size(110, 23);
             this.detalii.TabIndex = 35;
             // 
             // nrdocument
             // 
-            this.nrdocument.Location = new System.Drawing.Point(419, 381);
+            this.nrdocument.Location = new System.Drawing.Point(202, 313);
+            this.nrdocument.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nrdocument.Name = "nrdocument";
-            this.nrdocument.Size = new System.Drawing.Size(125, 27);
+            this.nrdocument.Size = new System.Drawing.Size(110, 23);
             this.nrdocument.TabIndex = 36;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Crimson;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label18.Location = new System.Drawing.Point(-1, 92);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(1034, 38);
+            this.label18.TabIndex = 37;
+            this.label18.Text = "Inregistrare voluntar nou";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(101, 431);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(40, 15);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "Detalii";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(85, 321);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(94, 15);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "Act de identitate";
             // 
             // AddVolunterData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 626);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::bucuriaDarului.Properties.Resources.MicrosoftTeams_image__79_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1032, 679);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.nrdocument);
             this.Controls.Add(this.detalii);
             this.Controls.Add(this.SendToDatabaseBtn);
-            this.Controls.Add(this.CarnetConducere);
             this.Controls.Add(this.Hobby);
             this.Controls.Add(this.prefesie);
             this.Controls.Add(this.telefontutore);
@@ -408,20 +328,9 @@
             this.Controls.Add(this.email);
             this.Controls.Add(this.prenume);
             this.Controls.Add(this.nume);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.checkboxActivitati);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.nr_ore);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.oraIesire);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.oraIntrare);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.entryDate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -431,6 +340,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddVolunterData";
             this.Text = "AddVolunterData";
             this.ResumeLayout(false);
@@ -449,20 +359,9 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private DateTimePicker entryDate;
         private Label label9;
-        private Label label10;
-        private DateTimePicker oraIntrare;
-        private Label label11;
-        private Label label12;
-        private DateTimePicker oraIesire;
-        private Label label13;
-        private TextBox nr_ore;
-        private Label label14;
-        private CheckedListBox checkboxActivitati;
         private Label label15;
         private Label label16;
-        private Label label17;
         private TextBox nume;
         private TextBox prenume;
         private TextBox email;
@@ -473,9 +372,11 @@
         private TextBox telefontutore;
         private TextBox prefesie;
         private TextBox Hobby;
-        private CheckedListBox CarnetConducere;
         private Button SendToDatabaseBtn;
         private TextBox detalii;
         private TextBox nrdocument;
+        private Label label18;
+        private Label label14;
+        private Label label17;
     }
 }

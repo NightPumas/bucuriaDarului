@@ -99,5 +99,10 @@ namespace bucuriaDarului
             userNameBox.Text = String.Empty;
             passwordBox.Text = String.Empty;
         }
+
+        private void welcomeMsgappname_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
