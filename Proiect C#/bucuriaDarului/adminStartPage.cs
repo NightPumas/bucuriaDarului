@@ -48,6 +48,9 @@ namespace bucuriaDarului
             SingletonDB.CloseDatabaseConnection();
         }
 
-
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //MessageBox.Show(DataGridView.)
+        }
     }
 }
