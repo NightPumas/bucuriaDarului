@@ -49,3 +49,4 @@ C:\PersonalStuff\bucuriaDarului\Proiect C#\bucuriaDarului\obj\Release\net6.0-win
 C:\PersonalStuff\bucuriaDarului\Proiect C#\bucuriaDarului\obj\Release\net6.0-windows\bucuriaDarului.pdb
 C:\PersonalStuff\bucuriaDarului\Proiect C#\bucuriaDarului\obj\Release\net6.0-windows\bucuriaDarului.genruntimeconfig.cache
 C:\PersonalStuff\bucuriaDarului\Proiect C#\bucuriaDarului\obj\Release\net6.0-windows\ref\bucuriaDarului.dll
+C:\PersonalStuff\bucuriaDarului\Proiect C#\bucuriaDarului\obj\Release\net6.0-windows\bucuriaDarului.AddVolunterData.resources

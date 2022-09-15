@@ -41,9 +41,9 @@ namespace bucuriaDarului
                         }
                     case 1: //Open AdminWindows
                         {
-                            MessageBox.Show("Login Succes");
-                            adminStartPage adminStartPage = new adminStartPage();
-                            adminStartPage.ShowDialog();
+                            MessageBox.Show("User Existent");
+                            AddVolunterData AddVolunterData = new AddVolunterData();
+                            AddVolunterData.ShowDialog();
                             break;
                         }
                 }
