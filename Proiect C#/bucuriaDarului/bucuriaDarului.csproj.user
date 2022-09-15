@@ -7,6 +7,9 @@
     <Compile Update="adminStartPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PontajVoluntarExistentcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="VolunteerScreen.cs">
       <SubType>Form</SubType>
     </Compile>
