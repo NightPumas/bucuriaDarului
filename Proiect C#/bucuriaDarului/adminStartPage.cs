@@ -30,15 +30,18 @@ namespace bucuriaDarului
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+                if (reader.HasRows)
                 {
-                    DataGridViewRow row = new DataGridViewRow();
-
-                    row.Cells[0].Value = reader.GetString(0);
-                    row.Cells[1].Value = reader.GetString(1);
-                    row.Cells[2].Value = reader.GetDateTime(2);
-                    row.Cells[3].Value = reader.GetInt32(3);
-                    dataGridView.Rows.Add(row);
+                    while (reader.Read())
+                    {
+                        //DataGridViewRow row = new DataGridViewRow();
+                        DataGridViewRow row = (DataGridViewRow)dataGridView.Rows[0].Clone();
+                        row.Cells[0].Value = reader.GetString(0);
+                        row.Cells[1].Value = reader.GetString(1);
+                        row.Cells[2].Value = reader.GetDateTime(2).ToShortDateString();
+                        row.Cells[3].Value = reader.GetByte(3);
+                        dataGridView.Rows.Add(row);
+                    }
                 }
 
             }
