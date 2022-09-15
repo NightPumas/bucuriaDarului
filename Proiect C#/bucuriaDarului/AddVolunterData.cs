@@ -162,11 +162,7 @@ namespace bucuriaDarului
                         cmd.Parameters.Add("@Hobbies", SqlDbType.VarChar).Value = Hobby.Text;
                         cmd.Parameters.Add("@Details", SqlDbType.VarChar).Value = detalii.Text;
                         cmd.Parameters.Add("@DocumentID", SqlDbType.VarChar).Value = nrdocument.Text;
-<<<<<<< Updated upstream
                         cmd.Parameters.Add("@RegistrationDate", SqlDbType.Date).Value = DateTime.Today;
-=======
-                        //cmd.Parameters.Add("@RegistrationDate", SqlDbType.Date).Value = entryDate.Value.ToShortDateString();
->>>>>>> Stashed changes
                         cmd.Parameters.Add("@Active", SqlDbType.Bit).Value = true;
                         int rowsAffected = cmd.ExecuteNonQuery();
                         cmd.Dispose();
