@@ -63,6 +63,8 @@
             this.Hobby = new System.Windows.Forms.TextBox();
             this.CarnetConducere = new System.Windows.Forms.CheckedListBox();
             this.SendToDatabaseBtn = new System.Windows.Forms.Button();
+            this.detalii = new System.Windows.Forms.TextBox();
+            this.nrdocument = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -367,11 +369,27 @@
             this.SendToDatabaseBtn.UseVisualStyleBackColor = true;
             this.SendToDatabaseBtn.Click += new System.EventHandler(this.SendToDatabaseBtn_Click);
             // 
+            // detalii
+            // 
+            this.detalii.Location = new System.Drawing.Point(381, 329);
+            this.detalii.Name = "detalii";
+            this.detalii.Size = new System.Drawing.Size(125, 27);
+            this.detalii.TabIndex = 35;
+            // 
+            // nrdocument
+            // 
+            this.nrdocument.Location = new System.Drawing.Point(419, 381);
+            this.nrdocument.Name = "nrdocument";
+            this.nrdocument.Size = new System.Drawing.Size(125, 27);
+            this.nrdocument.TabIndex = 36;
+            // 
             // AddVolunterData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(817, 626);
+            this.Controls.Add(this.nrdocument);
+            this.Controls.Add(this.detalii);
             this.Controls.Add(this.SendToDatabaseBtn);
             this.Controls.Add(this.CarnetConducere);
             this.Controls.Add(this.Hobby);
@@ -451,5 +469,7 @@
         private TextBox Hobby;
         private CheckedListBox CarnetConducere;
         private Button SendToDatabaseBtn;
+        private TextBox detalii;
+        private TextBox nrdocument;
     }
 }
