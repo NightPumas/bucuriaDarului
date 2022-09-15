@@ -184,5 +184,10 @@ namespace bucuriaDarului
             dataIesire = FormatDateTime(dateTimePickerIntrare.ToString());
             oreDeActivitateLabel.Text = oreTotalePentruUI().ToString();
         }
+
+        private void numeleVoluntaruluiLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
