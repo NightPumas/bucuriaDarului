@@ -44,7 +44,6 @@
             this.NrTelefonSearch.Name = "NrTelefonSearch";
             this.NrTelefonSearch.Size = new System.Drawing.Size(148, 31);
             this.NrTelefonSearch.TabIndex = 3;
-            this.NrTelefonSearch.TextChanged += new System.EventHandler(this.NrTelefonSearch_TextChanged);
             // 
             // CautareNrTelefon
             // 
@@ -67,7 +66,6 @@
             this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Numar de telefon:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

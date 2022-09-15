@@ -24,7 +24,7 @@ namespace bucuriaDarului
 
             if (NrTelefonSearch.Text.Length == 0 )
             {
-                MessageBox.Show("Campul nr telefon este obligatoriu");
+                MessageBox.Show("Campul numar telefon este obligatoriu");
                 nrTelefonExistent = false;
             }
 
@@ -36,21 +36,20 @@ namespace bucuriaDarului
                 {
                     case -1:
                         {
-                            MessageBox.Show("User Ne-Existent");
+                            MessageBox.Show("Voluntarul nu este inregistrat. Te rugam sa te inregistrezi prima data ");
                             AddVolunterData AddVolunterData = new AddVolunterData();
                             AddVolunterData.ShowDialog();
                             break;
                         }
                     case 1: //Open AdminWindows
                         {
-                            MessageBox.Show("User Existent");
                             PontajVoluntarExistentcs PontajVoluntarExistentcs = new PontajVoluntarExistentcs();
                             PontajVoluntarExistentcs.ShowDialog();
                             break;
                         }
-                    case -99: //Open AdminWindows
+                    case -99: //
                         {
-                            MessageBox.Show("Error Error Error");
+                            MessageBox.Show("Ceva nu a functionat. Te rugam contacteaza un admin");
                             break;
                         }
                 }
@@ -79,10 +78,10 @@ namespace bucuriaDarului
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error Error Error ! ");
                 return -99;
             }
         }
+<<<<<<< Updated upstream
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -98,5 +97,7 @@ namespace bucuriaDarului
         {
 
         }
+=======
+>>>>>>> Stashed changes
     }
 }

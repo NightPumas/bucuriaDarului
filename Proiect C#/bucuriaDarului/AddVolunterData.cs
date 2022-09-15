@@ -23,12 +23,9 @@ namespace bucuriaDarului
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)
         {
             int check = AddPersonToDatabase();
-
-            oraIesire_ValueChanged(sender, e);
-
-            // send to DB
-           // int pontaj = PontajVoluntarExistentcs.SendExistingVolunteerData();
-
+            PontajVoluntarExistentcs PontajVoluntarExistentcs = new PontajVoluntarExistentcs();
+            PontajVoluntarExistentcs.ShowDialog();
+            this.Close();
         }
 
         int AddPersonToDatabase()
@@ -176,11 +173,6 @@ namespace bucuriaDarului
                 MessageBox.Show("Can not open connection ! ");
                 return -1;
             }
-        }
-
-        private void oraIesire_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
