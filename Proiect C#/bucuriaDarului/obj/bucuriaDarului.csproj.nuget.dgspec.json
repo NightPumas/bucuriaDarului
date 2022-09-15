@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AG049451\\OneDrive - Cerner Corporation\\Desktop\\bucuriaDarului\\bucuriaDarului\\bucuriaDarului.csproj": {}
+    "C:\\PersonalStuff\\bucuriaDarului\\Proiect C#\\bucuriaDarului\\bucuriaDarului.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AG049451\\OneDrive - Cerner Corporation\\Desktop\\bucuriaDarului\\bucuriaDarului\\bucuriaDarului.csproj": {
+    "C:\\PersonalStuff\\bucuriaDarului\\Proiect C#\\bucuriaDarului\\bucuriaDarului.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AG049451\\OneDrive - Cerner Corporation\\Desktop\\bucuriaDarului\\bucuriaDarului\\bucuriaDarului.csproj",
+        "projectUniqueName": "C:\\PersonalStuff\\bucuriaDarului\\Proiect C#\\bucuriaDarului\\bucuriaDarului.csproj",
         "projectName": "bucuriaDarului",
-        "projectPath": "C:\\Users\\AG049451\\OneDrive - Cerner Corporation\\Desktop\\bucuriaDarului\\bucuriaDarului\\bucuriaDarului.csproj",
+        "projectPath": "C:\\PersonalStuff\\bucuriaDarului\\Proiect C#\\bucuriaDarului\\bucuriaDarului.csproj",
         "packagesPath": "C:\\Users\\AG049451\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AG049451\\OneDrive - Cerner Corporation\\Desktop\\bucuriaDarului\\bucuriaDarului\\obj\\",
+        "outputPath": "C:\\PersonalStuff\\bucuriaDarului\\Proiect C#\\bucuriaDarului\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

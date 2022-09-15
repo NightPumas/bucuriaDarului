@@ -45,8 +45,8 @@ namespace bucuriaDarului
                             ClearCredentials();
                             this.Hide();
                             //MessageBox.Show("Login Succes");
-                            adminStartPage adminStartPage = new adminStartPage();
-                            adminStartPage.ShowDialog();
+                            VolunteerScreen VolunteerScreen = new VolunteerScreen();
+                            VolunteerScreen.ShowDialog();
                             break;
                         }
                 }
