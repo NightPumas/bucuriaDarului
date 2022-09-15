@@ -83,5 +83,15 @@ namespace bucuriaDarului
                 return -99;
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NrTelefonSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
