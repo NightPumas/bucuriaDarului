@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace bucuriaDarului
 {
     public partial class AddVolunterData : Form
@@ -24,6 +25,9 @@ namespace bucuriaDarului
             int check = AddPersonToDatabase();
 
             oraIesire_ValueChanged(sender, e);
+
+            // send to DB
+           // int pontaj = PontajVoluntarExistentcs.SendExistingVolunteerData();
 
         }
 
