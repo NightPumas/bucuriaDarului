@@ -174,10 +174,13 @@
             // 
             // oraIntrare
             // 
+            this.oraIntrare.CustomFormat = "hh:mm:tt";
+            this.oraIntrare.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.oraIntrare.Location = new System.Drawing.Point(141, 460);
             this.oraIntrare.Name = "oraIntrare";
             this.oraIntrare.Size = new System.Drawing.Size(250, 27);
             this.oraIntrare.TabIndex = 12;
+            this.oraIntrare.Value = new System.DateTime(2022, 9, 15, 0, 0, 0, 0);
             // 
             // label11
             // 
@@ -199,10 +202,13 @@
             // 
             // oraIesire
             // 
+            this.oraIesire.CustomFormat = "hh:mm:tt";
+            this.oraIesire.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.oraIesire.Location = new System.Drawing.Point(141, 501);
             this.oraIesire.Name = "oraIesire";
             this.oraIesire.Size = new System.Drawing.Size(250, 27);
             this.oraIesire.TabIndex = 15;
+            this.oraIesire.ValueChanged += new System.EventHandler(this.oraIesire_ValueChanged);
             // 
             // label13
             // 

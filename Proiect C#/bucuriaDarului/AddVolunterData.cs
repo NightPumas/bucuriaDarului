@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,9 @@ namespace bucuriaDarului
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)
         {
             int check = AddPersonToDatabase();
+
+            oraIesire_ValueChanged(sender, e);
+
         }
 
         int AddPersonToDatabase()
@@ -168,6 +172,11 @@ namespace bucuriaDarului
                 MessageBox.Show("Can not open connection ! ");
                 return -1;
             }
+        }
+
+        private void oraIesire_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
