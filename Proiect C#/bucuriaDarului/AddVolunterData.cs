@@ -37,7 +37,7 @@ namespace bucuriaDarului
             int PhoneCheckTutore = DataValidation.CheckPhone(telefon.Text);
             int Emailcheck = DataValidation.CheckEmail(email.Text);
             int EmailcheckTutore = DataValidation.CheckEmail(emailtutore.Text);
-            string BirttDateString = DataNasterii.Value.
+            string BirttDateString = DataNasterii.Value.ToString();
             //MessageBox.Show(BirttDateString);
             //Check Name
             if (NameCheck == 0)
