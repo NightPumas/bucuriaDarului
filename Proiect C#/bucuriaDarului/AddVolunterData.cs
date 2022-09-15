@@ -27,7 +27,7 @@ namespace bucuriaDarului
             oraIesire_ValueChanged(sender, e);
 
             // send to DB
-            int pontaj = PontajVoluntarExistentcs.SendExistingVolunteerData();
+           // int pontaj = PontajVoluntarExistentcs.SendExistingVolunteerData();
 
         }
 
