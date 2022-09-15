@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.NumeC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrenumeC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RegDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NrDeOreC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NumeC,
             this.PrenumeC,
             this.RegDate,
             this.NrDeOreC});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 344);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView.Location = new System.Drawing.Point(116, 36);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 29;
+            this.dataGridView.Size = new System.Drawing.Size(553, 344);
+            this.dataGridView.TabIndex = 0;
             // 
             // NumeC
             // 
@@ -61,7 +61,7 @@
             // 
             // PrenumeC
             // 
-            this.PrenumeC.HeaderText = "Nume";
+            this.PrenumeC.HeaderText = "Prenume";
             this.PrenumeC.MinimumWidth = 6;
             this.PrenumeC.Name = "PrenumeC";
             this.PrenumeC.ReadOnly = true;
@@ -69,7 +69,7 @@
             // 
             // RegDate
             // 
-            this.RegDate.HeaderText = "Data Start";
+            this.RegDate.HeaderText = "Data";
             this.RegDate.MinimumWidth = 6;
             this.RegDate.Name = "RegDate";
             this.RegDate.ReadOnly = true;
@@ -88,17 +88,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 606);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Name = "adminStartPage";
             this.Text = "adminStartPage";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView;
         private DataGridViewTextBoxColumn NumeC;
         private DataGridViewTextBoxColumn PrenumeC;
         private DataGridViewTextBoxColumn RegDate;

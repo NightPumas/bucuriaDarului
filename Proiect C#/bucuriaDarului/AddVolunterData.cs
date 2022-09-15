@@ -23,14 +23,12 @@ namespace bucuriaDarului
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)
         {
             int check = AddPersonToDatabase();
-<<<<<<< HEAD
 
             oraIesire_ValueChanged(sender, e);
 
-=======
             // send to DB
-            //int pontaj = PontajVoluntarExistentcs.SendExistingVolunteerData();
->>>>>>> 71492c3e02bb0b2644de1798f8a085ee5662fc46
+            int pontaj = PontajVoluntarExistentcs.SendExistingVolunteerData();
+
         }
 
         int AddPersonToDatabase()
