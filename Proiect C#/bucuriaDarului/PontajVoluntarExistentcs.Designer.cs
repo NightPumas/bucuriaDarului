@@ -85,9 +85,9 @@
             this.numeleVoluntaruluiLabel.AutoSize = true;
             this.numeleVoluntaruluiLabel.Location = new System.Drawing.Point(283, 232);
             this.numeleVoluntaruluiLabel.Name = "numeleVoluntaruluiLabel";
-            this.numeleVoluntaruluiLabel.Size = new System.Drawing.Size(134, 20);
+            this.numeleVoluntaruluiLabel.Size = new System.Drawing.Size(37, 20);
             this.numeleVoluntaruluiLabel.TabIndex = 7;
-            this.numeleVoluntaruluiLabel.Text = "insereazanumele+!";
+            this.numeleVoluntaruluiLabel.Text = "Iulia";
             // 
             // maximOreLabel
             // 
