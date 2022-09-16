@@ -77,7 +77,7 @@ namespace bucuriaDarului
             {
                 SingletonDB.OpenDatabaseConnection();
 
-                volunteerID = "1";
+                volunteerID = "2";
 
             }
             SingletonDB.CloseDatabaseConnection();
@@ -113,6 +113,7 @@ namespace bucuriaDarului
 
                 SingletonDB.CloseDatabaseConnection();
                 MessageBox.Show("Fisa de pontaj a fost salvata");
+                this.Hide();
                 return 1;
             }
             catch (Exception ex)
