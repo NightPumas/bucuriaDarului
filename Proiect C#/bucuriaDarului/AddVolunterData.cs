@@ -175,5 +175,34 @@ namespace bucuriaDarului
                 return -1;
             }
         }
+
+        private void DataNasterii_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime zeroTime = new DateTime(1, 1, 1);
+            TimeSpan timediff = DateTime.Now - DataNasterii.Value;
+
+            if((zeroTime + timediff).Year - 1 < 18)
+            {
+                label5.Visible = true;
+                label6.Visible = true;
+                label7.Visible = true;
+                label8.Visible = true;
+                PrenumeTutore.Visible = true;
+                NumeTutore.Visible = true;
+                telefontutore.Visible = true;
+                emailtutore.Visible = true;
+            }
+            else
+            {
+                label5.Visible = false;
+                label6.Visible = false;
+                label7.Visible = false;
+                label8.Visible = false;
+                PrenumeTutore.Visible = false;
+                NumeTutore.Visible = false;
+                telefontutore.Visible = false;
+                emailtutore.Visible = false;
+            }
+        }
     }
 }
