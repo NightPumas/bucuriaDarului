@@ -48,7 +48,7 @@ namespace bucuriaDarului
                 DataValidation DataValidation = new DataValidation();
                 int FirstNameCheck = DataValidation.CheckName(prenume.Text);
                 int NameCheck = DataValidation.CheckName(prenume.Text);
-                int PhoneCheck = DataValidation.CheckPhone(telefontutore.Text);
+                int PhoneCheck = DataValidation.CheckPhone(telefon.Text);
                 int Emailcheck = DataValidation.CheckEmail(email.Text);
                 string BirttDateString = DataNasterii.Value.ToString();
                 //MessageBox.Show(BirttDateString);
@@ -95,10 +95,8 @@ namespace bucuriaDarului
                     {
                         MessageBox.Show("Phone is Invalid");
                         error = true;
-                    };
+                    }
                 }
-
-
 
                 if (Emailcheck == 0)
                 {
