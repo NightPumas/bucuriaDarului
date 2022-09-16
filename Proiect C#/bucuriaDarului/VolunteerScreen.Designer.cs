@@ -104,7 +104,7 @@
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.NrTelefonSearch);
             this.Name = "VolunteerScreen";
-            this.Text = "VolunteerScreen";
+            this.Text = "Bucuria Darului";
             this.ResumeLayout(false);
             this.PerformLayout();
 

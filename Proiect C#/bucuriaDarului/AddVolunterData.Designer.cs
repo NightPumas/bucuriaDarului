@@ -327,8 +327,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "AddVolunterData";
-            this.Text = "AddVolunterData";
+            this.Name = "AddVolunteerData";
+            this.Text = "Bucuria Darului";
             this.ResumeLayout(false);
             this.PerformLayout();
 
