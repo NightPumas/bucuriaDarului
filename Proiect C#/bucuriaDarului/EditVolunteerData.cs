@@ -24,7 +24,7 @@ namespace bucuriaDarului
 
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)
         {
-            //int check = ();
+           // int check = UpdateVoluntar();
 
         }
 
