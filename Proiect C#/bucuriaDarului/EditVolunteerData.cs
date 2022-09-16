@@ -112,8 +112,8 @@ namespace bucuriaDarului
                     cmd.Dispose();
                     SingletonDB.CloseDatabaseConnection();
                 }
-                
 
+                MessageBox.Show("Modificare efectuata cu succes!");
                 return 1;
             }
             catch (Exception ex)
