@@ -15,6 +15,7 @@ namespace bucuriaDarului
 {
     public partial class AddVolunterData : Form
     {
+        public static string SetValueForPhoneFromAdd = "";
         public AddVolunterData()
         {
             InitializeComponent();
@@ -120,8 +121,8 @@ namespace bucuriaDarului
                 }
                 else
                 {
-
-                    SqlConnection cnn = SingletonDB.GetDBConnection();
+                    SetValueForPhoneFromAdd = telefon.Text;
+                                        SqlConnection cnn = SingletonDB.GetDBConnection();
                     SingletonDB.OpenDatabaseConnection();
                     using (SqlCommand cmd = new("dbo.InsertPerson", cnn))
                     {

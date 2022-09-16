@@ -17,6 +17,8 @@ namespace bucuriaDarului
     public partial class PontajVoluntarExistentcs : Form
     {
         static string phoneNumber = VolunteerScreen.SetValueForPhone; //get phone from previous screen;
+        static string phoneNumberFromAdd = AddVolunterData.SetValueForPhoneFromAdd;
+
         public PontajVoluntarExistentcs()
         {
             InitializeComponent();
@@ -51,7 +53,7 @@ namespace bucuriaDarului
         public static string getVolunteerNameFromDB()
         {
             string volunteerName = "";
-            string queryString = "SELECT [FirstName] FROM [dbo].[Volunteers] WHERE [PhoneNumber]=" + phoneNumber ;
+            string queryString = "SELECT [FirstName] FROM [dbo].[Volunteers] WHERE [PhoneNumber]=" + (phoneNumber.Length != 0 ? phoneNumber : phoneNumberFromAdd);
             SqlConnection cnn = SingletonDB.GetDBConnection();
                 SingletonDB.OpenDatabaseConnection();
 
@@ -76,7 +78,7 @@ namespace bucuriaDarului
         public static string getVolunteerIDFromDB()
         {
             string volunteerID = "";
-            string queryString = "SELECT [ObjectID] FROM [dbo].[Volunteers] WHERE [PhoneNumber]=" + phoneNumber;
+            string queryString = "SELECT [ObjectID] FROM [dbo].[Volunteers] WHERE [PhoneNumber]=" + (phoneNumber.Length!=0 ? phoneNumber : phoneNumberFromAdd); 
 
             SqlConnection cnn = SingletonDB.GetDBConnection();
 
@@ -127,7 +129,7 @@ namespace bucuriaDarului
                 }
 
                 SingletonDB.CloseDatabaseConnection();
-                MessageBox.Show("Fisa de pontaj salvata");
+                MessageBox.Show("Fisa de pontaj a fost salvata");
                 return 1;
             }
             catch (Exception ex)

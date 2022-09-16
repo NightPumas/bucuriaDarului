@@ -24,7 +24,7 @@ namespace bucuriaDarului
 
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)
         {
-           // int check = UpdateVoluntar();
+            int check = UpdateVoluntar();
 
         }
 
@@ -44,9 +44,9 @@ namespace bucuriaDarului
                         while (reader.Read())
                         {
                             if (!reader.IsDBNull(1))
-                                prenume.Text = reader.GetString(1);
+                                nume.Text = reader.GetString(1);
                             if (!reader.IsDBNull(2))
-                                nume.Text  = reader.GetString(2);
+                                prenume.Text  = reader.GetString(2);
                             if (!reader.IsDBNull(3))
                                 email.Text = reader.GetString(3);
                             if (!reader.IsDBNull(4))
@@ -81,6 +81,44 @@ namespace bucuriaDarului
             catch (Exception ex)
             {
                 MessageBox.Show("A intervenit o eroare la preluarea datelor");
+                return -1;
+            }
+        }
+        int UpdateVoluntar()
+        {
+            try
+            {
+                    SqlConnection cnn = SingletonDB.GetDBConnection();
+                    SingletonDB.OpenDatabaseConnection();
+                using (SqlCommand cmd = new("dbo.UpdatePerson", cnn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@ObjectID", SqlDbType.Int).Value = objectIDtoEDIT;
+                    cmd.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = nume.Text;
+                    cmd.Parameters.Add("@LastName", SqlDbType.VarChar).Value = prenume.Text;
+                    cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = email.Text;
+                    cmd.Parameters.Add("@PhoneNumber", SqlDbType.VarChar).Value = telefon.Text;
+                    cmd.Parameters.Add("@BirthDate", SqlDbType.Date).Value = DataNasterii.Value.ToShortDateString();
+                    cmd.Parameters.Add("@TutorFirstName", SqlDbType.VarChar).Value = PrenumeTutore.Text;
+                    cmd.Parameters.Add("@TutorLastName", SqlDbType.VarChar).Value = NumeTutore.Text;
+                    cmd.Parameters.Add("@TutorEmail", SqlDbType.VarChar).Value = emailtutore.Text;
+                    cmd.Parameters.Add("@PhoneNumberTutor", SqlDbType.VarChar).Value = telefontutore.Text;
+                    cmd.Parameters.Add("@Profession", SqlDbType.VarChar).Value = prefesie.Text;
+                    cmd.Parameters.Add("@Hobbies", SqlDbType.VarChar).Value = Hobby.Text;
+                    cmd.Parameters.Add("@Details", SqlDbType.VarChar).Value = detalii.Text;
+                    cmd.Parameters.Add("@DocumentID", SqlDbType.VarChar).Value = nrdocument.Text;
+                    cmd.Parameters.Add("@RegistrationDate", SqlDbType.Date).Value = DateTime.Today;
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+                    SingletonDB.CloseDatabaseConnection();
+                }
+                
+
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Can not open connection ! ");
                 return -1;
             }
         }
