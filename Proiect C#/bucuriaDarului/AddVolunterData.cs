@@ -35,7 +35,7 @@ namespace bucuriaDarului
             {
                 PontajVoluntarExistentcs PontajVoluntarExistentcs = new PontajVoluntarExistentcs();
                 PontajVoluntarExistentcs.ShowDialog();
-                this.Close();
+                this.Hide();
             }
         }
 

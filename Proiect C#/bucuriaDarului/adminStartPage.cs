@@ -63,7 +63,7 @@ namespace bucuriaDarului
         {
             volunteeringApp volunteeringApp = new volunteeringApp();
             volunteeringApp.ShowDialog();
-            this.Close();
+            this.hide();
         }
     }
 }
