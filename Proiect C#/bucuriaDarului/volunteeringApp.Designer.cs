@@ -126,7 +126,7 @@ namespace bucuriaDarului
             this.Controls.Add(this.userNameBox);
             this.Controls.Add(this.welcomeMsgappname);
             this.Name = "volunteeringApp";
-            this.Text = "volunteeringApp";
+            this.Text = "Bucuria bucuriaDarului";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

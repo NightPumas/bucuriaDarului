@@ -137,7 +137,7 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.dataGridView);
             this.Name = "adminStartPage";
-            this.Text = "adminStartPage";
+            this.Text = "Bucuria Darului";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 

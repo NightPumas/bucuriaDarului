@@ -196,7 +196,7 @@
             this.Controls.Add(this.dateTimePickerIesire);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PontajVoluntarExistentcs";
-            this.Text = "PontajVoluntarExistentcs";
+            this.Text = "Bucuria Darului";
             this.ResumeLayout(false);
             this.PerformLayout();
 
