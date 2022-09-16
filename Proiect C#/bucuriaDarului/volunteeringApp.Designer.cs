@@ -56,9 +56,9 @@ namespace bucuriaDarului
             this.welcomeMsgappname.AutoSize = true;
             this.welcomeMsgappname.BackColor = System.Drawing.Color.White;
             this.welcomeMsgappname.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.welcomeMsgappname.Location = new System.Drawing.Point(646, 245);
+            this.welcomeMsgappname.Location = new System.Drawing.Point(738, 327);
             this.welcomeMsgappname.Name = "welcomeMsgappname";
-            this.welcomeMsgappname.Size = new System.Drawing.Size(331, 37);
+            this.welcomeMsgappname.Size = new System.Drawing.Size(410, 46);
             this.welcomeMsgappname.TabIndex = 1;
             this.welcomeMsgappname.Text = "Gestionarea voluntarilor";
             this.welcomeMsgappname.Click += new System.EventHandler(this.welcomeMsgappname_Click);
@@ -66,19 +66,18 @@ namespace bucuriaDarului
             // userNameBox
             // 
             this.userNameBox.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.userNameBox.Location = new System.Drawing.Point(783, 301);
-            this.userNameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userNameBox.Location = new System.Drawing.Point(895, 401);
             this.userNameBox.Name = "userNameBox";
-            this.userNameBox.Size = new System.Drawing.Size(128, 31);
+            this.userNameBox.Size = new System.Drawing.Size(146, 36);
             this.userNameBox.TabIndex = 2;
             // 
             // passwordBox
             // 
             this.passwordBox.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.passwordBox.Location = new System.Drawing.Point(783, 345);
-            this.passwordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.passwordBox.Location = new System.Drawing.Point(895, 460);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(128, 31);
+            this.passwordBox.PasswordChar = '*';
+            this.passwordBox.Size = new System.Drawing.Size(146, 36);
             this.passwordBox.TabIndex = 3;
             // 
             // label1
@@ -86,9 +85,9 @@ namespace bucuriaDarului
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(676, 299);
+            this.label1.Location = new System.Drawing.Point(773, 399);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 28);
+            this.label1.Size = new System.Drawing.Size(124, 35);
             this.label1.TabIndex = 4;
             this.label1.Text = "Utilizator";
             // 
@@ -97,19 +96,18 @@ namespace bucuriaDarului
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(676, 348);
+            this.label2.Location = new System.Drawing.Point(773, 464);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 28);
+            this.label2.Size = new System.Drawing.Size(87, 35);
             this.label2.TabIndex = 5;
             this.label2.Text = "Parola";
             // 
             // loginBtb
             // 
             this.loginBtb.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.loginBtb.Location = new System.Drawing.Point(819, 390);
-            this.loginBtb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginBtb.Location = new System.Drawing.Point(936, 520);
             this.loginBtb.Name = "loginBtb";
-            this.loginBtb.Size = new System.Drawing.Size(92, 28);
+            this.loginBtb.Size = new System.Drawing.Size(105, 37);
             this.loginBtb.TabIndex = 6;
             this.loginBtb.Text = "Conectare";
             this.loginBtb.UseVisualStyleBackColor = true;
@@ -117,17 +115,16 @@ namespace bucuriaDarului
             // 
             // volunteeringApp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1034, 551);
+            this.ClientSize = new System.Drawing.Size(1182, 735);
             this.Controls.Add(this.loginBtb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.userNameBox);
             this.Controls.Add(this.welcomeMsgappname);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "volunteeringApp";
             this.Text = "volunteeringApp";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

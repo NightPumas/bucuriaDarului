@@ -15,6 +15,7 @@ namespace bucuriaDarului
     public partial class VolunteerScreen : Form
     {
         public static string SetValueForPhone = "";
+
         public VolunteerScreen()
         {
             InitializeComponent();

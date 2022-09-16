@@ -14,12 +14,12 @@ namespace bucuriaDarului
 {
     public partial class adminStartPage : Form
     {
+        public static string SetObjectIdForUpdate = "";
         public adminStartPage()
         {
             InitializeComponent();
             populateTable();
         }
-
 
         void populateTable()
         {
@@ -34,12 +34,13 @@ namespace bucuriaDarului
                 {
                     while (reader.Read())
                     {
-                        //DataGridViewRow row = new DataGridViewRow();
+
                         DataGridViewRow row = (DataGridViewRow)dataGridView.Rows[0].Clone();
-                        row.Cells[0].Value = reader.GetString(0);
-                        row.Cells[1].Value = reader.GetString(1);
-                        row.Cells[2].Value = reader.GetDateTime(2).ToShortDateString();
-                        row.Cells[3].Value = reader.GetByte(3);
+
+                        row.Cells[0].Value = reader.GetInt32(0);
+                        row.Cells[1].Value = reader.GetString(1) + " " +  reader.GetString(2);
+                        row.Cells[2].Value = reader.GetDateTime(3).ToShortDateString();
+                        row.Cells[3].Value = reader.GetDecimal(4);
                         dataGridView.Rows.Add(row);
                     }
                 }
@@ -48,8 +49,13 @@ namespace bucuriaDarului
             SingletonDB.CloseDatabaseConnection();
         }
 
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            SetObjectIdForUpdate = dataGridView.Rows[dataGridView.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            EditVolunteerData EditVolunteerData = new EditVolunteerData();
+            EditVolunteerData.ShowDialog();
+
+
             //MessageBox.Show(DataGridView.)
         }
     }

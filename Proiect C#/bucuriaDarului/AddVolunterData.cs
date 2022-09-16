@@ -18,6 +18,14 @@ namespace bucuriaDarului
         public AddVolunterData()
         {
             InitializeComponent();
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            PrenumeTutore.Visible = false;
+            NumeTutore.Visible = false;
+            telefontutore.Visible = false;
+            emailtutore.Visible = false;
         }
 
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)

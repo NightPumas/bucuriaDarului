@@ -78,12 +78,13 @@ namespace bucuriaDarului
             string volunteerID = "";
             string queryString = "SELECT [ObjectID] FROM [dbo].[Volunteers] WHERE [PhoneNumber]=" + phoneNumber;
 
-            using (SqlConnection cnn = SingletonDB.GetDBConnection())
+            SqlConnection cnn = SingletonDB.GetDBConnection();
+
+            using (SqlCommand cmd = new(queryString, cnn))
             {
-                SqlCommand command = new SqlCommand(queryString, cnn);
                 SingletonDB.OpenDatabaseConnection();
 
-                SqlDataReader reader = command.ExecuteReader();
+                SqlDataReader reader = cmd.ExecuteReader();
 
                 // Call Read before accessing data.
                 while (reader.Read())
@@ -106,30 +107,32 @@ namespace bucuriaDarului
         }
 
         public
-        static int SendExistingVolunteerData()
+        int SendExistingVolunteerData()
         {
             try
             {
                 string voluntarID = getVolunteerIDFromDB();
-                DateTimePicker dateTimePickerIesire = new DateTimePicker();
-                DateTimePicker dateTimePickerIntrare = new DateTimePicker();
 
                 SqlConnection cnn = SingletonDB.GetDBConnection();
                 SingletonDB.OpenDatabaseConnection();
-                SqlCommand cmd = new("dbo.InsertTimesheet", cnn);
+                using (SqlCommand cmd = new("dbo.InsertTimesheet", cnn))
+                {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add("@IDVolunteer", SqlDbType.Int).Value = voluntarID;
-                    cmd.Parameters.Add("@EntryDateTime", SqlDbType.DateTime).Value = dateTimePickerIntrare.Value.Date;
-                    cmd.Parameters.Add("@ExitDateTime ", SqlDbType.DateTime).Value = dateTimePickerIesire.Value.Date; 
-                    cmd.Parameters.Add("@TotalHours ", SqlDbType.TinyInt).Value = Convert.ToDecimal(dateTimePickerIesire.Value.Subtract(dateTimePickerIntrare.Value));
-                    int rowsAffected = cmd.ExecuteNonQuery();
+                    cmd.Parameters.Add("@EntryDateTime", SqlDbType.DateTime).Value = dateTimePickerIntrare.Value;
+                    cmd.Parameters.Add("@ExitDateTime ", SqlDbType.DateTime).Value = dateTimePickerIesire.Value;
+                    cmd.Parameters.Add("@TotalHours ", SqlDbType.Decimal).Value = oreTotale();
+                    cmd.ExecuteScalar();
                     cmd.Dispose();
+                }
 
+                SingletonDB.CloseDatabaseConnection();
+                MessageBox.Show("Fisa de pontaj salvata");
                 return 1;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Can not open connection ! ");
+                MessageBox.Show("Eroare la salvarea fisei de pontaj");
                 return -1;
             }
         }
