@@ -24,10 +24,8 @@ namespace bucuriaDarului
 
         private void SendToDatabaseBtn_Click(object sender, EventArgs e)
         {
-            //int check = EditPersoninDB();
-            PontajVoluntarExistentcs PontajVoluntarExistentcs = new PontajVoluntarExistentcs();
-            PontajVoluntarExistentcs.ShowDialog();
-            this.Close();
+            //int check = ();
+
         }
 
         int AddInfoOnUI()

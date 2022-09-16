@@ -58,5 +58,12 @@ namespace bucuriaDarului
 
             //MessageBox.Show(DataGridView.)
         }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            volunteeringApp volunteeringApp = new volunteeringApp();
+            volunteeringApp.ShowDialog();
+            this.Close();
+        }
     }
 }

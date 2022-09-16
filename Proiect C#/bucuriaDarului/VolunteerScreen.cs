@@ -85,5 +85,13 @@ namespace bucuriaDarului
                 return -99;
             }
         }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            volunteeringApp volunteeringApp = new volunteeringApp();
+            volunteeringApp.ShowDialog();   
+
+        }
     }
 }

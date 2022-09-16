@@ -262,7 +262,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(1182, 51);
             this.label18.TabIndex = 37;
-            this.label18.Text = "Inregistrare voluntar nou";
+            this.label18.Text = "Modificare date voluntar";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14

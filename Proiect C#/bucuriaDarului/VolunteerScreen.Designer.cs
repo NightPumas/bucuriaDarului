@@ -34,6 +34,7 @@
             this.searchBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.logoutBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NrTelefonSearch
@@ -78,6 +79,17 @@
             this.label2.Text = "Cautare numar de telefon voluntar";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // logoutBtn
+            // 
+            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logoutBtn.Location = new System.Drawing.Point(1040, 214);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(121, 29);
+            this.logoutBtn.TabIndex = 7;
+            this.logoutBtn.Text = "Deconectare";
+            this.logoutBtn.UseVisualStyleBackColor = true;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
+            // 
             // VolunteerScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -86,6 +98,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1182, 735);
+            this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.searchBtn);
@@ -104,5 +117,6 @@
         public Button searchBtn;
         private Label label1;
         private Label label2;
+        private Button logoutBtn;
     }
 }
