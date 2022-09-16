@@ -45,30 +45,32 @@ namespace bucuriaDarului
                     {
                         while (reader.Read())
                         {
-                            if (reader.GetString(1).Length != 0)
+                            if (!reader.IsDBNull(1))
                                 prenume.Text = reader.GetString(1);
-                            if (reader.GetString(2).Length != 0) 
+                            if (!reader.IsDBNull(2))
                                 nume.Text  = reader.GetString(2);
-                            if (reader.GetString(6).Length != 0)
+                            if (!reader.IsDBNull(3))
                                 email.Text = reader.GetString(3);
-                            if (reader.GetString(6).Length != 0)
+                            if (!reader.IsDBNull(4))
                                 telefon.Text = reader.GetString(4);
-                            if (reader.GetDateTime(5).ToString().Length != 0) 
+                            if (!reader.IsDBNull(5))
                                 DataNasterii.Value = reader.GetDateTime(5);
-                            if(reader.GetString(6).Length != 0) 
+                            if(!reader.IsDBNull(6)) 
                                 PrenumeTutore.Text = reader.GetString(6);
-                            if (reader.GetString(7).Length != 0) 
+                            if (!reader.IsDBNull(7))
                                 NumeTutore.Text = reader.GetString(7);
-                            if (reader.GetString(8).Length != 0) 
+                            if (!reader.IsDBNull(8))
                                 emailtutore.Text = reader.GetString(8);
-                            if (reader.GetString(9).Length != 0)
+                            if (!reader.IsDBNull(9))
                                 telefontutore.Text = reader.GetString(9);
-                            if (reader.GetString(6).Length != 0)
+                            if (!reader.IsDBNull(10))
                                 prefesie.Text = reader.GetString(10);
-                            if (reader.GetString(6).Length != 0)
-                                detalii.Text = reader.GetString(11);
-                            if (reader.GetString(6).Length != 0)
-                                nrdocument.Text = reader.GetString(12);
+                            if (!reader.IsDBNull(11))
+                                Hobby.Text = reader.GetString(11);
+                            if (!reader.IsDBNull(12))
+                                detalii.Text = reader.GetString(12);
+                            if (!reader.IsDBNull(13))
+                                nrdocument.Text = reader.GetString(13);
                         }
                     }
 
@@ -80,7 +82,7 @@ namespace bucuriaDarului
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Can not open connection ! ");
+                MessageBox.Show("A intervenit o eroare la preluarea datelor");
                 return -1;
             }
         }

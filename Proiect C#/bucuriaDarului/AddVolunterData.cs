@@ -46,9 +46,7 @@ namespace bucuriaDarului
                 int FirstNameCheck = DataValidation.CheckName(prenume.Text);
                 int NameCheck = DataValidation.CheckName(prenume.Text);
                 int PhoneCheck = DataValidation.CheckPhone(telefontutore.Text);
-                int PhoneCheckTutore = DataValidation.CheckPhone(telefon.Text);
                 int Emailcheck = DataValidation.CheckEmail(email.Text);
-                int EmailcheckTutore = DataValidation.CheckEmail(emailtutore.Text);
                 string BirttDateString = DataNasterii.Value.ToString();
                 //MessageBox.Show(BirttDateString);
                 //Check Name
@@ -97,20 +95,7 @@ namespace bucuriaDarului
                     };
                 }
 
-                if (PhoneCheckTutore == 0)
-                {
-                    MessageBox.Show("Phone cannot be empty");
-                    error = true;
-                }
-                else
-                {
-                    //check Phone is valid
-                    if (PhoneCheckTutore == -1)
-                    {
-                        MessageBox.Show("Phone is Invalid");
-                        error = true;
-                    };
-                }
+
 
                 if (Emailcheck == 0)
                 {
@@ -123,21 +108,6 @@ namespace bucuriaDarului
                     if (Emailcheck == -1)
                     {
                         MessageBox.Show("Email is Invalid or to long");
-                        error = true;
-                    }
-                }
-
-                if (EmailcheckTutore == 0)
-                {
-                    MessageBox.Show("EmailTutore cannot be empty");
-                    error = true;
-                }
-                else
-                {
-                    //check email is valid
-                    if (EmailcheckTutore == -1)
-                    {
-                        MessageBox.Show("EmailTutore is Invalid or to long");
                         error = true;
                     }
                 }
