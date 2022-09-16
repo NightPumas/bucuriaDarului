@@ -115,6 +115,7 @@ namespace bucuriaDarului
                 if (error)
                 {
                     MessageBox.Show("Erori in form, va rugam verificati datele "); /////////////Dialog box neaparat 
+                    return -1;
                 }
                 else
                 {
