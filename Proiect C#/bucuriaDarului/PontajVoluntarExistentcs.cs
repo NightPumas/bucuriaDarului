@@ -22,7 +22,7 @@ namespace bucuriaDarului
         public PontajVoluntarExistentcs()
         {
             InitializeComponent();
-            numeleVoluntaruluiLabel.Text = getVolunteerNameFromDB();
+            //numeleVoluntaruluiLabel.Text = getVolunteerNameFromDB();
             oreDeActivitateLabel.Text = oreTotale().ToString();
             dataCurentaLabel.Text = DateTime.Today.ToShortDateString();
         }
@@ -59,17 +59,8 @@ namespace bucuriaDarului
 
             using (SqlCommand command = new SqlCommand(queryString, cnn))
             {
-                SqlDataReader reader = command.ExecuteReader();
 
-                // Call Read before accessing data.
-                while (reader.Read())
-                {
-                    volunteerName = ReadSingleRow((IDataRecord)reader);
-                }
-                
-
-                // Call Close when done reading.
-                reader.Close();
+                volunteerName = (string)command.ExecuteScalar();
             }
             SingletonDB.CloseDatabaseConnection();
             return volunteerName;
@@ -86,16 +77,8 @@ namespace bucuriaDarului
             {
                 SingletonDB.OpenDatabaseConnection();
 
-                SqlDataReader reader = cmd.ExecuteReader();
+                volunteerID = "1";
 
-                // Call Read before accessing data.
-                while (reader.Read())
-                {
-                    volunteerID = ReadSingleRow((IDataRecord)reader);
-                }
-
-                // Call Close when done reading.
-                reader.Close();
             }
             SingletonDB.CloseDatabaseConnection();
             return volunteerID;
